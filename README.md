@@ -1,4 +1,4 @@
-empty
+Empty
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -19,15 +19,27 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'validate.io-empty' );
+var isEmpty = require( 'validate.io-empty' );
+
+console.log( isEmpty( {} ) );
+// Returns true
+
+console.log( isEmpty( [] ) );
+// Returns true
+
+console.log( isEmpty( '' ) );
+// Returns true
+
+console.log( isEmpty( null ) );
+// Returns false
 ```
+
+## Notes
+
+This method __only__ applies to `string`, `array`, and `object` value types. For everything else, the method returns `false`.
 
 
 ## Examples
-
-``` javascript
-var lib = require( 'validate.io-empty' );
-```
 
 To run the example code from the top-level application directory,
 
