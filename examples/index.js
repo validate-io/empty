@@ -1,13 +1,15 @@
+'use strict';
+
 var isEmpty = require( './../lib' );
 
 console.log( isEmpty( {} ) );
-// Returns true
+// returns true
 
 console.log( isEmpty( [] ) );
-// Returns true
+// returns true
 
 console.log( isEmpty( '' ) );
-// Returns true
+// returns true
 
 console.log( isEmpty( null ) );
-// Returns false
+// returns false
